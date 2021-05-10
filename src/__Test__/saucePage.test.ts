@@ -31,24 +31,4 @@ it('adds items to cart', async() =>{
         console.log ("Test was succesful!")
     })
 
-   // test('User can checkout once cart is filled', async() =>{
-     //   await myPage.navigate()
-    // await myPage.setInput(myPage.username, 'standard_user')
-    //    await myPage.setInput(myPage.password, 'secret_sauce')
-      //  await myPage.click(myPage.loginButton)
-    //    await myPage.click(myPage.addBackpack)
-    //    await myPage.click(myPage.cartButton)
-    //    await myPage.click(myPage.checkout)
-    //    await myPage.click(myPage.firstname)
-    //    await myPage.click(myPage.lastname)
-    //    await myPage.click(myPage.zipcode)
-    //    await myPage.click(myPage.continue)
-    //})
-    //test('User can remove item', async() => {
-     //   await myPage.navigate()
-     //   await myPage.setInput(myPage.username, 'standard_user')
-    //    await myPage.setInput(myPage.password, 'secret_sauce')
-    //    await myPage.click(myPage.loginButton)
-    //    await myPage.click(myPage.addBackpack)
-    //    await myPage.click(myPage.cartButton)
-    //    await myPage.click(myPage.removeBackpack)
+   
