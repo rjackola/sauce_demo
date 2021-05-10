@@ -9,8 +9,9 @@ export class saucePage extends BasePage {
     password: By = By.id('password')
     loginButton: By = By.id('login-button')
     addBackpack: By = By.id('add-to-cart-sauce-labs-backpack')
-    cartButton: By = By.name('shopping_cart_link')
+    cartButton: By = By.className('shopping_cart_link')
     removeBackpack: By = By.id('remove-sauce-labs-backpack')
     checkout: By = By.id ('checkout')
+    continueShopping: By = By.id ('continue-shopping')
 
 }

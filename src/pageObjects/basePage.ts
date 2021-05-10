@@ -22,10 +22,8 @@ export class BasePage {
         return await (await this.getElement(elementBy)).click()
     }
 
-    async setInput(elementBy: By, typing: string) {
-        let input = await this.getElement(elementBy)
-        await input.clear()
-        return input.sendKeys(typing)
+    async setInput(selector: By, typing: string) {
+        await this.driver.findElement(selector).sendKeys(`${typing}\n`)
     }
 
     async getText(elementBy: By) {
