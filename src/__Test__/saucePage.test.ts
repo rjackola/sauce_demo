@@ -12,6 +12,7 @@ const myPage = new saucePage (myDriver, 'https://www.saucedemo.com/')
     await myPage.setInput(myPage.username, 'standard_user')
     await myPage.setInput(myPage.password, 'secret_sauce')
     await myPage.click(myPage.loginButton)
+    await myDriver.sleep(3000)
 })
 
     test('Adds item to cart', async() =>{
@@ -20,14 +21,17 @@ const myPage = new saucePage (myDriver, 'https://www.saucedemo.com/')
         await myPage.setInput(myPage.password, 'secret_sauce')
         await myPage.click(myPage.loginButton)
         await myPage.click(myPage.addBackpack)
+        await myDriver.sleep(3000)
     } )
 
     test('Goes to Cart Page', async() =>{
         await myPage.click(myPage.cartButton)
+        await myDriver.sleep(3000)
     })
 
     test('Can Remove from Cart', async() =>{
         await myPage.click(myPage.removeBackpack)
+        await myDriver.sleep(3000)
 
 })
     test('Go to Checkout Page', async() =>{
@@ -35,6 +39,7 @@ const myPage = new saucePage (myDriver, 'https://www.saucedemo.com/')
     await myPage.click(myPage.addBackpack)
     await myPage.click(myPage.cartButton)
     await myPage.click(myPage.checkout)
+    await myDriver.sleep(5000)
 })
 afterAll(async () => {
     await myDriver.quit();
