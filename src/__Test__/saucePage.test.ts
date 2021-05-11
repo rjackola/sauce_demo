@@ -5,7 +5,7 @@ import {BasePage} from '../pageObjects/basePage'
 
 const myDriver = new Builder().withCapabilities(Capabilities.chrome()).build()
 
-const myPage = new saucePage (myDriver, 'https://www.saucedemo.com/')
+const myPage = new saucePage (myDriver, 'https://www.saucedemo.com/%27)
 
     test('Opens Sauce Demo website & logs in', async () => {
     await myPage.navigate()
