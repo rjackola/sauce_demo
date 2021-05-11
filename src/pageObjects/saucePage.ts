@@ -16,4 +16,7 @@ export class saucePage extends BasePage {
     lastname: By = By.id('last-name')
     zipcode: By = By.id('postal-code')
     continue: By = By.id('continue')
+    continueShopping: By = By.id ('continue-shopping')
+    
+    
 }
