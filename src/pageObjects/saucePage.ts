@@ -13,10 +13,11 @@ export class saucePage extends BasePage {
     removeBackpack: By = By.id('remove-sauce-labs-backpack')
     checkout: By = By.id ('checkout')
     firstname: By = By.id('first-name')
-    lastname: By = By.id('last-name')
-    zipcode: By = By.id('postal-code')
+    lastName: By = By.css('input[name="lastName"]')
+    postalcode: By = By.id('postal-code')
     continue: By = By.id('continue')
-    continueShopping: By = By.id ('continue-shopping')
+    continueShopping: By = By.id('continue-shopping')
+    finish: By = By.id('finish')
     
     
 }
