@@ -18,6 +18,4 @@ export class saucePage extends BasePage {
     continue: By = By.id('continue')
     continueShopping: By = By.id('continue-shopping')
     finish: By = By.id('finish')
-    
-    
 }
