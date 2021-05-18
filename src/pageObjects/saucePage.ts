@@ -12,6 +12,3 @@ export class saucePage extends BasePage {
     cartButton: By = By.className('shopping_cart_link')
     removeBackpack: By = By.id('remove-sauce-labs-backpack')
     checkout: By = By.id ('checkout')
-    continueShopping: By = By.id ('continue-shopping')
-
-}

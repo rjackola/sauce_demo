@@ -23,8 +23,7 @@ export class BasePage {
     }
 
     async setInput(selector: By, typing: string) {
-        await this.driver.findElement(selector).sendKeys(`${typing}\n`)
-    }
+
 
     async getText(elementBy: By) {
         return (await this.getElement(elementBy)).getText()
